@@ -7,8 +7,8 @@
     <ProjectGuid>{C3478018-D371-4284-945D-5C8E364F0D12}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Karthus</RootNamespace>
-    <AssemblyName>Karthus</AssemblyName>
+    <RootNamespace>Karthusv2</RootNamespace>
+    <AssemblyName>Karthusv2</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
