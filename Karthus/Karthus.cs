@@ -62,7 +62,9 @@ namespace Karthus
             // Initialize properties
             Menu = MainMenu.AddMenu("Karthus 3K", "karthus", "Karthus - King Killsteal");
             SpellHandler = new SpellHandler(this,
-                new Spell.Skillshot(SpellSlot.Q, 890, SkillShotType.Circular, spellSpeed: int.MaxValue, spellWidth: 160 * 2, castDelay: 750),
+                new Spell.Skillshot(SpellSlot.Q, 875f, TargetSelector.DamageType.Magical) {
+                MinHitChance = HitChance.High
+           ),
                 new Spell.Skillshot(SpellSlot.W, 1000, SkillShotType.Circular, spellWidth: 100),
                 new Spell.Active(SpellSlot.E, 550),
                 new Spell.Active(SpellSlot.R));
