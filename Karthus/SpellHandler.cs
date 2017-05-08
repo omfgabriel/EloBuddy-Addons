@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using EloBuddy;
 using EloBuddy.SDK;
 using SharpDX;
@@ -52,15 +52,15 @@ namespace Karthus
 
             switch (slot)
             {
-                case SpellSlot.Q:
-                {
-                    if (Q.Cast(target))
-                    {
-                        // Q was casted
-                        return true;
-                    }
-                    break;
-                }
+				case SpellSlot.Q:
+				{
+				  if (Q.Cast(Q.GetPrediction(target).CastPosition))
+				  {
+					// Q was casted
+					return true;
+				  }
+				  break;
+				}
                 case SpellSlot.W:
                 {
                     if (CastWallOfPain(target))
